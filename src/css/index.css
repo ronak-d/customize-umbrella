@@ -1,9 +1,14 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
 .container {
   /* border: 3px solid red; */
 }
 
 .mainContainer {
-  width: 70%;
+  width: 60%;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -11,10 +16,10 @@
   /* border: 3px solid blue; */
   display: flex;
 }
-
+/* left Box */
 #leftBox {
-  border: 3px solid Yellow;
-  flex: 1;
+  /* border: 3px solid Yellow; */
+  flex: 2;
 }
 
 #img_umbrella {
@@ -43,13 +48,39 @@
 /* right box  */
 
 #rightBox {
-  border: 3px solid Yellow;
-  flex: 1;
-  padding: 10px 20px;
+  /* border: 3px solid Yellow; */
+  flex: 1.5;
+  padding: 0px 20px;
 }
 
 #infoBox {
-  border: 3px solid Yellow;
+  /* border: 3px solid Yellow; */
   display: flex;
   flex-direction: column;
+  /* align-content: space-between; */
+}
+
+#headingone {
+  font-size: 29px;
+  font-weight: bold;
+}
+
+#headingtwo {
+  font-size: 17px;
+}
+
+#headingthree {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+#imageUpload {
+  display: flex;
+  /* justify-content: space-between; */
+  /* border: 2px solid red; */
+}
+
+#imageSvg {
+  margin-right: 25px;
+  /* border: 2px solid RED; */
 }

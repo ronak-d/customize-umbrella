@@ -1,5 +1,5 @@
 .container {
-  border: 3px solid red;
+  /* border: 3px solid red; */
 }
 
 .mainContainer {
@@ -8,7 +8,7 @@
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
   display: flex;
 }
 
@@ -40,7 +40,16 @@
   height: 20%;
 }
 
+/* right box  */
+
 #rightBox {
   border: 3px solid Yellow;
   flex: 1;
+  padding: 10px 20px;
+}
+
+#infoBox {
+  border: 3px solid Yellow;
+  display: flex;
+  flex-direction: column;
 }

@@ -16,6 +16,30 @@
   border: 3px solid Yellow;
   flex: 1;
 }
+
+#img_umbrella {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#logo_umbrella {
+  /* border: 3px solid red; */
+  position: absolute;
+  bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#logo-bottom {
+  /* border: 3px solid red; */
+  width: 18%;
+  height: 20%;
+}
+
 #rightBox {
   border: 3px solid Yellow;
   flex: 1;

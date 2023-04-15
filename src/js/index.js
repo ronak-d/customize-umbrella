@@ -20,3 +20,8 @@ for (let i = 0; i < colors.length; i++) {
   colorDiv.appendChild(newDiv);
   newDiv.addEventListener("click", handleColor(colors[i]));
 }
+
+// why click is making in mounting itself?
+// upload button with type imgage need to be working
+//  referece ->
+// https://chat.openai.com/c/3ef02859-696e-41df-b07f-f2d6d08d1c51

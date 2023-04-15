@@ -1,6 +1,10 @@
-let colors = ["blue", "pink", "yellow"];
+const colors = ["blue", "pink", "yellow"];
 
-let colorDiv = document.getElementById("colorBadge");
+const handleColor = (e) => {
+  console.log(e);
+};
+
+const colorDiv = document.getElementById("colorBadge");
 
 for (let i = 0; i < colors.length; i++) {
   // Creates a new div element
@@ -14,4 +18,5 @@ for (let i = 0; i < colors.length; i++) {
   //   newDiv.style.border = "2px solid black";
 
   colorDiv.appendChild(newDiv);
+  newDiv.addEventListener("click", handleColor(colors[i]));
 }

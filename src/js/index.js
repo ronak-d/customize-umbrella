@@ -15,13 +15,32 @@ for (let i = 0; i < colors.length; i++) {
   newDiv.style.height = "25px";
   newDiv.style.borderRadius = "50%";
   newDiv.style.marginRight = "10px";
-  //   newDiv.style.border = "2px solid black";
 
   colorDiv.appendChild(newDiv);
-  newDiv.addEventListener("click", handleColor(colors[i]));
+  newDiv.addEventListener("click", () => handleColor(colors[i]));
 }
 
-// why click is making in mounting itself?
-// upload button with type imgage need to be working
-//  referece ->
-// https://chat.openai.com/c/3ef02859-696e-41df-b07f-f2d6d08d1c51
+// for the upload logo thing :-
+// with filereader.
+const imageUpload = document.getElementById("imageUpload");
+const logoBottom = document.getElementById("logo-bottom");
+
+imageUpload.addEventListener("click", () => {
+  console.log("clicked");
+  const fileInput = document.createElement("input");
+
+  fileInput.type = "file";
+  fileInput.accept = "image/*";
+
+  fileInput.addEventListener("change", () => {
+    const file = fileInput.files[0];
+    const reader = new FileReader();
+
+    reader.addEventListener("load", () => {
+      logoBottom.src = reader.result;
+    });
+
+    reader.readAsDataURL(file);
+  });
+  fileInput.click();
+});

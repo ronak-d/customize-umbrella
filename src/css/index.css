@@ -81,11 +81,18 @@ body {
 
 #imageUpload {
   display: flex;
+  background-color: lightblue;
+  /* border: 2px solid red; */
+  cursor: pointer;
   /* justify-content: space-between; */
   /* border: 2px solid red; */
 }
 
 #imageSvg {
-  margin-right: 25px;
+  margin: 0px 25px;
   /* border: 2px solid RED; */
+}
+
+#upload_word {
+  /* color: aliceblue; */
 }

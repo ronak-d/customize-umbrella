@@ -1,7 +1,12 @@
-const colors = ["blue", "pink", "yellow"];
+const colors = ["lightBlue", "pink", "yellow"];
 
-const handleColor = (e) => {
-  console.log(e);
+const handleColor = (color) => {
+  let umbrella = document.getElementById("umbrella_img");
+
+  let UploadDiv = document.getElementById("imageUpload");
+  UploadDiv.style.backgroundColor = `${color}`;
+  umbrella.src = `/Public/${color} umbrella.png`;
+  console.log(color);
 };
 
 const colorDiv = document.getElementById("colorBadge");

@@ -3,20 +3,16 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.container {
-  /* border: 3px solid red; */
-}
-
 .mainContainer {
   width: 60%;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding: 20px;
+  /* padding: 20px; */
   /* border: 3px solid blue; */
   display: flex;
 }
-/* left Box */
+
 #leftBox {
   /* border: 3px solid Yellow; */
   flex: 1.5;
@@ -50,14 +46,13 @@ body {
 #rightBox {
   /* border: 3px solid Yellow; */
   flex: 1;
-  padding: 0px 20px;
+  /* padding: 0px 20px; */
 }
 
 #infoBox {
   /* border: 3px solid Yellow; */
   display: flex;
   flex-direction: column;
-  /* align-content: space-between; */
 }
 
 #colorBadge {
@@ -84,8 +79,6 @@ body {
   background-color: lightblue;
   /* border: 2px solid red; */
   cursor: pointer;
-  /* justify-content: space-between; */
-  /* border: 2px solid red; */
 }
 
 #imageSvg {
@@ -93,6 +86,16 @@ body {
   /* border: 2px solid RED; */
 }
 
-#upload_word {
-  /* color: aliceblue; */
+/* responsiveness for 720pixels */
+
+@media (min-width: 320px) and (max-width: 720px) {
+  .mainContainer {
+    display: block;
+  }
+  #rightBox {
+    width: 100%;
+  }
+  #leftBox {
+    width: 100%;
+  }
 }
